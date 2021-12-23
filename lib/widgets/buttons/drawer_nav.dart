@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class HoverNav extends StatefulWidget {
+class DrawerNav extends StatefulWidget {
   final String title;
-  const HoverNav({Key? key, required this.title}) : super(key: key);
+  const DrawerNav({Key? key, required this.title}) : super(key: key);
 
   @override
-  State<HoverNav> createState() => _HoverNavState();
+  State<DrawerNav> createState() => _DrawerNavState();
 }
 
-class _HoverNavState extends State<HoverNav> {
+class _DrawerNavState extends State<DrawerNav> {
   bool _hover = false;
 
   @override
@@ -18,10 +18,10 @@ class _HoverNavState extends State<HoverNav> {
       child: MouseRegion(
         cursor: _hover ? SystemMouseCursors.click : SystemMouseCursors.text,
         child: Text(
-            widget.title,
+          widget.title,
           style: TextStyle(
-            color: _hover ? Colors.white54 : Colors.white,
-            fontSize: 16,
+            color: _hover ? Colors.black12 : Colors.black,
+            fontSize: 18,
           ),
         ),
         onHover: (event) {
