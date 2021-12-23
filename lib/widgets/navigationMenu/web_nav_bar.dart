@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:programmers_folio/widgets/buttons/hover_nav.dart';
 
 class WebNavigationBar extends StatelessWidget with PreferredSizeWidget {
   @override
   final Size preferredSize;
 
-  WebNavigationBar({Key? key}) : preferredSize = const Size.fromHeight(60),
+  WebNavigationBar({Key? key}) : preferredSize = const Size.fromHeight(70),
   super(key: key);
 
   @override
@@ -13,12 +14,12 @@ class WebNavigationBar extends StatelessWidget with PreferredSizeWidget {
     return AppBar(
       backgroundColor: Colors.black87,
       title: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.red,
+            Padding(
+              padding: const EdgeInsets.only(top: 25),
+              child: SvgPicture.asset('images/square.svg', height: 150),
             ),
             Row(
               children: const [
