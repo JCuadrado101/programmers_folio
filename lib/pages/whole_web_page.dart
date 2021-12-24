@@ -19,8 +19,8 @@ class WholeWebPage extends StatelessWidget {
         color: Theme.of(context).backgroundColor,
         child: ListView(
           children: const [
-            // HomePage(),
-            // PageSeparator(),
+            HomePage(),
+            PageSeparator(),
             AboutPage(),
           ],
         ),
