@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:programmers_folio/pages/about_page.dart';
+import 'package:programmers_folio/pages/whole_web_page.dart';
 
 import 'pages/home_page.dart';
 
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.black87,
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const WholeWebPage(),
     );
   }
 }
