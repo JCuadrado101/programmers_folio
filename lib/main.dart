@@ -15,9 +15,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
-          color: Colors.black,
+          color: Colors.black87,
           toolbarHeight: 70
         ),
+        fontFamily: 'Roboto',
+        backgroundColor: Colors.black87,
         primarySwatch: Colors.blue,
       ),
       home: const HomePage(),
