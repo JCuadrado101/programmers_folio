@@ -24,7 +24,9 @@ class WholeWebPage extends StatelessWidget {
             PageSeparator(),
             AboutPage(),
             PageSeparator(),
-            ServicePage()
+            ServicePage(),
+            PageSeparator(),
+            
           ],
         ),
       )
