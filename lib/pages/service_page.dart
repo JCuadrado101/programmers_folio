@@ -8,8 +8,13 @@ class ServicePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final maxWidth = MediaQuery.of(context).size.width;
+
     return Padding(
-      padding: const EdgeInsets.only(top: 80, bottom: 80),
+      padding: EdgeInsets.only(
+          top: maxWidth > 1000 ? 80 : 50,
+          bottom: 120
+      ),
       child: Column(
         children: [
           Padding(
