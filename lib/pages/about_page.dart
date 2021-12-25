@@ -9,7 +9,7 @@ class AboutPage extends StatelessWidget {
     return Padding(
         padding: const EdgeInsets.only(
           top: 120,
-          bottom: 60,
+          bottom: 80,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
