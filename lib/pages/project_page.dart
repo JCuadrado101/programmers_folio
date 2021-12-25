@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:programmers_folio/widgets/layout/project_url.dart';
+import 'package:programmers_folio/widgets/navigation_menu/programming_icons.dart';
+import 'package:programmers_folio/widgets/navigation_menu/programming_icons_images.dart';
 
 class ProjectPage extends StatelessWidget {
   const ProjectPage({Key? key}) : super(key: key);
@@ -14,11 +17,11 @@ class ProjectPage extends StatelessWidget {
         children: [
           Text(
             'My Projects',
-              style: GoogleFonts.roboto(
-                fontSize: 40,
-                fontWeight: FontWeight.w700,
-                color: Colors.white,
-              ),
+            style: GoogleFonts.roboto(
+              fontSize: 40,
+              fontWeight: FontWeight.w700,
+              color: Colors.white,
+            ),
           ),
           const SizedBox(height: 50),
           Wrap(
@@ -27,33 +30,52 @@ class ProjectPage extends StatelessWidget {
             children: [
               Card(
                 child: Column(
-                  children: [
-                    Text(
-                      '1 Mark Website',
-                      style: GoogleFonts.roboto(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.black,
-                      ),
-                    ),
-                    Image.asset('images/1mark.png', width: 200),
-                    SizedBox(
-                      width: 200,
-                      child: Container(
-                        color: Colors.black,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            SvgPicture.asset('images/flutter.svg', height: 30),
-                            SvgPicture.asset('images/firebase.svg', height: 30),
-                            Image.asset('images/rive.jpeg', height: 30),
-                            SvgPicture.asset('images/grpc.svg', height: 30),
-                            SvgPicture.asset('images/go.svg', height: 30),
-                          ],
+                    children: [
+                      Text(
+                        '1 Mark Website',
+                        style: GoogleFonts.roboto(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black,
                         ),
                       ),
-                    )
-                  ]
+                      const ProjectURL(
+                        projectImage: 'assets/images/1mark.png',
+                        projectURL: 'https://1mark.work',
+                        projectImageWidth: 200,
+                      ),
+                      SizedBox(
+                        width: 200,
+                        child: Container(
+                          color: Colors.black,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: const [
+                              ProgrammingIconSvg(
+                                imagePath: 'images/flutter.svg',
+                                imageURL: 'https://flutter.dev',
+                              ),
+                              ProgrammingIconSvg(
+                                imagePath: 'images/firebase.svg',
+                                imageURL: 'https://firebase.flutter.dev/',
+                              ),
+                              ProgrammingIconImage(
+                                imagePath: 'images/rive.jpeg',
+                                imageURL: 'https://rive.app/',
+                              ),
+                              ProgrammingIconSvg(
+                                imagePath: 'images/grpc.svg',
+                                imageURL: 'https://grpc.io/',
+                              ),
+                              ProgrammingIconSvg(
+                                imagePath: 'images/go.svg',
+                                imageURL: 'https://go.dev/',
+                              ),
+                            ],
+                          ),
+                        ),
+                      )
+                    ]
                 ),
               ),
               Card(
@@ -67,18 +89,34 @@ class ProjectPage extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
-                      Image.asset('images/1markSystem.png', width: 170),
+                      const ProjectURL(
+                        projectImage: 'assets/images/1markSystem.png',
+                        projectURL: 'https://1mark.work/#/login',
+                        projectImageWidth: 170,
+                      ),
                       SizedBox(
                         width: 200,
                         child: Container(
                           color: Colors.black,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              SvgPicture.asset('images/flutter.svg', height: 30),
-                              SvgPicture.asset('images/firebase.svg', height: 30),
-                              SvgPicture.asset('images/grpc.svg', height: 30),
-                              SvgPicture.asset('images/go.svg', height: 30),
+                            children: const [
+                              ProgrammingIconSvg(
+                                  imagePath: 'images/flutter.svg',
+                                  imageURL: 'https://flutter.dev',
+                              ),
+                              ProgrammingIconSvg(
+                                imagePath: 'images/firebase.svg',
+                                imageURL: 'https://firebase.flutter.dev/',
+                              ),
+                              ProgrammingIconSvg(
+                                  imagePath: 'images/grpc.svg',
+                                  imageURL: 'https://grpc.io/',
+                              ),
+                              ProgrammingIconSvg(
+                                imagePath: 'images/go.svg',
+                                imageURL: 'https://go.dev/',
+                              ),
                             ],
                           ),
                         ),
@@ -90,25 +128,41 @@ class ProjectPage extends StatelessWidget {
                 child: Column(
                     children: [
                       Text(
-                        'LGMG Part System',
+                        'LGMG Mobile Parts',
                         style: GoogleFonts.roboto(
                           fontSize: 20,
                           fontWeight: FontWeight.w700,
                           color: Colors.black,
                         ),
                       ),
-                      Image.asset('images/lgmg_logo.png', width: 110),
+                      const ProjectURL(
+                        projectImage: 'images/lgmg_logo.png',
+                        projectURL: 'https://play.google.com/store/apps/details?id=com.gmail.lgmgapp',
+                        projectImageWidth: 110,
+                      ),
                       SizedBox(
                         width: 200,
                         child: Container(
                           color: Colors.black,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              SvgPicture.asset('images/flutter.svg', height: 30),
-                              SvgPicture.asset('images/python.svg', height: 30),
-                              SvgPicture.asset('images/grpc.svg', height: 30),
-                              SvgPicture.asset('images/go.svg', height: 30),
+                            children: const [
+                              ProgrammingIconSvg(
+                                imagePath: 'images/flutter.svg',
+                                imageURL: 'https://flutter.dev',
+                              ),
+                              ProgrammingIconSvg(
+                                imagePath: 'images/python.svg',
+                                imageURL: 'https://www.python.org/',
+                              ),
+                              ProgrammingIconSvg(
+                                imagePath: 'images/grpc.svg',
+                                imageURL: 'https://grpc.io/',
+                              ),
+                              ProgrammingIconSvg(
+                                imagePath: 'images/go.svg',
+                                imageURL: 'https://go.dev/',
+                              ),
                             ],
                           ),
                         ),
