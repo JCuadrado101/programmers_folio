@@ -6,6 +6,8 @@ import 'package:programmers_folio/widgets/navigation_menu/app_bar.dart';
 import 'package:programmers_folio/widgets/navigation_menu/drawer.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:programmers_folio/widgets/provider/home_image.dart';
+import 'package:provider/src/provider.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -29,9 +31,13 @@ class HomePage extends StatelessWidget {
                       fontWeight: FontWeight.w100,
                       color: Colors.white),
                 ),
-                const Text(
+                Text(
                   'Cuadrado',
-                  style: TextStyle(fontSize: 100, color: Colors.white),
+                  style: GoogleFonts.roboto(
+                      fontSize: 100,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.white
+                  ),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

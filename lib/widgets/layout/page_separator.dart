@@ -5,11 +5,13 @@ class PageSeparator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(
-          horizontal: 500
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+          horizontal: 10.0
       ),
       child: Divider(
+        endIndent: 200,
+        indent: 200,
         color: Colors.white54,
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({Key? key}) : super(key: key);
@@ -7,7 +8,7 @@ class AboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
         padding: const EdgeInsets.only(
-          top: 30,
+          top: 120,
           bottom: 60,
         ),
         child: Row(
@@ -15,27 +16,26 @@ class AboutPage extends StatelessWidget {
           children: [
             Column(
               children: [
-                const Text(
+                 Text(
                   'About Me',
-                  style: TextStyle(
-                    fontSize: 40,
-                    fontWeight: FontWeight.bold,
+                  style: GoogleFonts.roboto(
+                      fontSize: 40,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.white
                   ),
                 ),
-                Container(color: Colors.white, height: 400, width: 300),
+                SizedBox(height: 20),
+                Container(
+                  color: Colors.white,
+                  height: 400,
+                  width: 300
+                ),
               ],
             ),
             Column(
-              children: const [
-                Text(
-                  'Who am I?',
-                  style: TextStyle(
-                    fontSize: 25,
-                    color: Colors.white,
-                  ),
-                ),
+              children: [
                 SizedBox(
-                  width: 300,
+                  width: 400,
                   child: Text(
                     'I am a self-taught front-end developer based out of Harrisburg, PA with a passive for creating applications and websites.'
                         ' I have a passion for learning and I am always looking to improve my skills. \n\n'
@@ -44,9 +44,10 @@ class AboutPage extends StatelessWidget {
                         'If Dart/Flutter doesn\'t meet the requirements, I have the ability to switch to other technologies, '
                         'such as ReactJS, React Native or even basic HTML, CSS and JS \n\n'
                         'As time progresses, I\'m looking to expand my knowledge and eventually build a career in the field.',
-                    style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.white,
+                    style: GoogleFonts.roboto(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w300,
+                        color: Colors.white
                     ),
                   ),
                 ),
