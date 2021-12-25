@@ -15,10 +15,9 @@ class NavigationBar extends StatelessWidget with PreferredSizeWidget {
 
     if(maxWidth > 700) {
       return AppBar(
-          backgroundColor: Colors.black87,
           title: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 25),
