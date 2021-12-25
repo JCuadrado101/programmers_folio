@@ -11,7 +11,7 @@ class AboutPage extends StatelessWidget {
     if(maxWidth > 1000) {
       return Padding(
           padding: const EdgeInsets.only(
-            top: 120,
+            top: 80,
             bottom: 80,
           ),
           child: Row(
@@ -27,7 +27,7 @@ class AboutPage extends StatelessWidget {
                         color: Colors.white
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 30),
                   Container(
                       color: Colors.white,
                       height: 400,

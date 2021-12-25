@@ -12,18 +12,20 @@ class ServicePage extends StatelessWidget {
 
     return Padding(
       padding: EdgeInsets.only(
-          top: maxWidth > 1000 ? 80 : 50,
+          top: maxWidth > 1000 ? 50 : 30,
           bottom: 120
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 40),
-            child: Text('My Services',
+            child: Text(
+              'My Services',
                 style: GoogleFonts.roboto(
                   fontSize: 40,
                   fontWeight: FontWeight.w700,
-                  color: Colors.white
+                  color: Colors.white,
                 ),
             ),
           ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:programmers_folio/pages/project_page.dart';
 import 'package:programmers_folio/pages/service_page.dart';
 import 'package:programmers_folio/widgets/layout/page_separator.dart';
 import 'package:programmers_folio/widgets/navigation_menu/app_bar.dart';
@@ -26,7 +27,7 @@ class WholeWebPage extends StatelessWidget {
             PageSeparator(),
             ServicePage(),
             PageSeparator(),
-            
+            ProjectPage(),
           ],
         ),
       )
