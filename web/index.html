@@ -34,6 +34,28 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyD2nD1VC7Ld_26zy1-M_WhB_F5MlAOSv9Y",
+      authDomain: "my-portfolio-a0400.firebaseapp.com",
+      projectId: "my-portfolio-a0400",
+      storageBucket: "my-portfolio-a0400.appspot.com",
+      messagingSenderId: "862752384659",
+      appId: "1:862752384659:web:08bbee1a8cd2b6f776cf66",
+      measurementId: "G-EHEQVNG8ZJ"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
     function loadMainDartJs() {

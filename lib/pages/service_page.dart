@@ -33,8 +33,8 @@ class ServicePage extends StatelessWidget {
             width: 1000,
             child: Wrap(
               alignment: WrapAlignment.center,
-              runSpacing: 20,
-              spacing: 20,
+              runSpacing: 50,
+              spacing: 50,
               children: const [
                 ServiceCards(
                   icon: Icons.web,
@@ -53,6 +53,12 @@ class ServicePage extends StatelessWidget {
                   backgroundColor: Colors.blue,
                   serviceTitle: 'Windows/Mac Development',
                   serviceDescription: 'I develop for both Windows and MacOS',
+                ),
+                ServiceCards(
+                  icon: Icons.watch,
+                  backgroundColor: Colors.blue,
+                  serviceTitle: 'Watch OS Development',
+                  serviceDescription: 'Samsung\'s WatchOS development',
                 ),
                 ServiceCards(
                   icon: LineIcons.spinner,

@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:programmers_folio/widgets/buttons/hover_nav.dart';
 
-class NavigationBar extends StatelessWidget with PreferredSizeWidget {
+class CustomNavBar extends StatelessWidget with PreferredSizeWidget {
   @override
   final Size preferredSize;
 
-  NavigationBar({Key? key}) : preferredSize = const Size.fromHeight(70),
+  CustomNavBar({Key? key}) : preferredSize = const Size.fromHeight(70),
   super(key: key);
 
   @override
@@ -29,7 +29,7 @@ class NavigationBar extends StatelessWidget with PreferredSizeWidget {
                     HoverNav(title: 'About',),
                     HoverNav(title: 'Services',),
                     HoverNav(title: 'Projects',),
-                    HoverNav(title: 'Contact',),
+                    // HoverNav(title: 'Contact',),
                   ],
                 ),
               ]
@@ -37,15 +37,11 @@ class NavigationBar extends StatelessWidget with PreferredSizeWidget {
       );
     } else {
       return AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Container(),
-            Padding(
-              padding: const EdgeInsets.only(top: 25),
-              child: SvgPicture.asset('images/square.svg', height: 150),
-            ),
-          ],
+        title: Padding(
+          padding: const EdgeInsets.only(top: 25),
+          child: Align(
+            alignment: Alignment.centerRight,
+              child: SvgPicture.asset('images/square.svg', height: 150)),
         )
       );
     }
