@@ -21,14 +21,26 @@ class CustomNavBar extends StatelessWidget with PreferredSizeWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 25),
-                  child: SvgPicture.asset('images/square.svg', height: 150),
+                  child: Image.asset('assets/images/square.png', height: 150),
                 ),
                 Row(
                   children: const [
-                    HoverNav(title: 'Home'),
-                    HoverNav(title: 'About',),
-                    HoverNav(title: 'Services',),
-                    HoverNav(title: 'Projects',),
+                    HoverNav(
+                      title: 'Home',
+                      route: '/home',
+                    ),
+                    HoverNav(
+                      title: 'About',
+                      route: '/about'
+                    ),
+                    HoverNav(
+                      title: 'Services',
+                      route: '/service'
+                    ),
+                    HoverNav(
+                      title: 'Projects',
+                      route: '/projects'
+                    ),
                     // HoverNav(title: 'Contact',),
                   ],
                 ),

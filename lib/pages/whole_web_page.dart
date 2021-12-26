@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:programmers_folio/pages/project_page.dart';
-import 'package:programmers_folio/pages/service_page.dart';
+import 'package:programmers_folio/pages/main_page/project_page.dart';
+import 'package:programmers_folio/pages/main_page/service_page.dart';
 import 'package:programmers_folio/widgets/layout/page_separator.dart';
 import 'package:programmers_folio/widgets/navigation_menu/drawer.dart';
 import '../widgets/navigation_menu/app_bar.dart';
-import 'about_page.dart';
-import 'home_page.dart';
+import 'main_page/about_page.dart';
+import 'main_page/home_page.dart';
 
 class WholeWebPage extends StatelessWidget {
   const WholeWebPage({Key? key}) : super(key: key);
