@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:programmers_folio/pages/project_page.dart';
 import 'package:programmers_folio/pages/service_page.dart';
 import 'package:programmers_folio/widgets/layout/page_separator.dart';
-import 'package:programmers_folio/widgets/navigation_menu/app_bar.dart';
 import 'package:programmers_folio/widgets/navigation_menu/drawer.dart';
-
+import '../widgets/navigation_menu/app_bar.dart';
 import 'about_page.dart';
 import 'home_page.dart';
 
@@ -15,7 +14,7 @@ class WholeWebPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final maxWidth = MediaQuery.of(context).size.width;
     return Scaffold(
-      appBar: NavigationBar(),
+      appBar: CustomNavBar(),
       drawer: maxWidth > 700 ? null : const MobileDrawer(),
       body: Container(
         color: Theme.of(context).backgroundColor,
@@ -28,6 +27,7 @@ class WholeWebPage extends StatelessWidget {
             ServicePage(),
             PageSeparator(),
             ProjectPage(),
+            PageSeparator(),
           ],
         ),
       )

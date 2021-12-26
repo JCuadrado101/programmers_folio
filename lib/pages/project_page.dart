@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:programmers_folio/widgets/layout/project_url.dart';
 import 'package:programmers_folio/widgets/navigation_menu/programming_icons.dart';
@@ -11,7 +10,7 @@ class ProjectPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 80),
+      padding: const EdgeInsets.symmetric(vertical: 80),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -42,10 +41,10 @@ class ProjectPage extends StatelessWidget {
                       const ProjectURL(
                         projectImage: 'assets/images/1mark.png',
                         projectURL: 'https://1mark.work',
-                        projectImageWidth: 200,
+                        projectImageWidth: 320,
                       ),
                       SizedBox(
-                        width: 200,
+                        width: 320,
                         child: Container(
                           color: Colors.black,
                           child: Row(
@@ -92,10 +91,10 @@ class ProjectPage extends StatelessWidget {
                       const ProjectURL(
                         projectImage: 'assets/images/1markSystem.png',
                         projectURL: 'https://1mark.work/#/login',
-                        projectImageWidth: 170,
+                        projectImageWidth: 275,
                       ),
                       SizedBox(
-                        width: 200,
+                        width: 300,
                         child: Container(
                           color: Colors.black,
                           child: Row(
@@ -138,10 +137,10 @@ class ProjectPage extends StatelessWidget {
                       const ProjectURL(
                         projectImage: 'images/lgmg_logo.png',
                         projectURL: 'https://play.google.com/store/apps/details?id=com.gmail.lgmgapp',
-                        projectImageWidth: 110,
+                        projectImageWidth: 175,
                       ),
                       SizedBox(
-                        width: 200,
+                        width: 300,
                         child: Container(
                           color: Colors.black,
                           child: Row(

@@ -23,7 +23,7 @@ class MobileDrawer extends StatelessWidget {
                   DrawerNav(title: 'About'),
                   DrawerNav(title: 'Services'),
                   DrawerNav(title: 'Projects'),
-                  DrawerNav(title: 'Contact'),
+                  // DrawerNav(title: 'Contact'),
                 ],
               ),
               const Text('@2020 Programmers Folio'),
