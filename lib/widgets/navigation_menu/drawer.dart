@@ -19,10 +19,22 @@ class MobileDrawer extends StatelessWidget {
               ),
               Column(
                 children: const [
-                  DrawerNav(title: 'Home'),
-                  DrawerNav(title: 'About'),
-                  DrawerNav(title: 'Services'),
-                  DrawerNav(title: 'Projects'),
+                  DrawerNav(
+                    title: 'Home',
+                    route: '/home',
+                  ),
+                  DrawerNav(
+                    title: 'About',
+                    route: '/about',
+                  ),
+                  DrawerNav(
+                    title: 'Services',
+                    route: '/service',
+                  ),
+                  DrawerNav(
+                    title: 'Projects',
+                    route: '/projects',
+                  ),
                   // DrawerNav(title: 'Contact'),
                 ],
               ),

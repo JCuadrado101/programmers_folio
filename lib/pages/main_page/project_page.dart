@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:programmers_folio/widgets/layout/project_url.dart';
-import 'package:programmers_folio/widgets/navigation_menu/programming_icons.dart';
 import 'package:programmers_folio/widgets/navigation_menu/programming_icons_images.dart';
 
 class ProjectPage extends StatelessWidget {
@@ -50,24 +49,24 @@ class ProjectPage extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: const [
-                              ProgrammingIconSvg(
-                                imagePath: 'images/flutter.svg',
+                              ProgrammingIconImage(
+                                imagePath: 'assets/images/flutter.png',
                                 imageURL: 'https://flutter.dev',
                               ),
-                              ProgrammingIconSvg(
-                                imagePath: 'images/firebase.svg',
+                              ProgrammingIconImage(
+                                imagePath: 'assets/images/firebase.png',
                                 imageURL: 'https://firebase.flutter.dev/',
                               ),
                               ProgrammingIconImage(
-                                imagePath: 'images/rive.jpeg',
+                                imagePath: 'assets/images/rive.png',
                                 imageURL: 'https://rive.app/',
                               ),
-                              ProgrammingIconSvg(
-                                imagePath: 'images/grpc.svg',
+                              ProgrammingIconImage(
+                                imagePath: 'assets/images/grpc.png',
                                 imageURL: 'https://grpc.io/',
                               ),
-                              ProgrammingIconSvg(
-                                imagePath: 'images/go.svg',
+                              ProgrammingIconImage(
+                                imagePath: 'assets/images/go.png',
                                 imageURL: 'https://go.dev/',
                               ),
                             ],
@@ -100,20 +99,20 @@ class ProjectPage extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: const [
-                              ProgrammingIconSvg(
-                                  imagePath: 'images/flutter.svg',
+                              ProgrammingIconImage(
+                                  imagePath: 'assets/images/flutter.png',
                                   imageURL: 'https://flutter.dev',
                               ),
-                              ProgrammingIconSvg(
-                                imagePath: 'images/firebase.svg',
+                              ProgrammingIconImage(
+                                imagePath: 'assets/images/firebase.png',
                                 imageURL: 'https://firebase.flutter.dev/',
                               ),
-                              ProgrammingIconSvg(
-                                  imagePath: 'images/grpc.svg',
+                              ProgrammingIconImage(
+                                  imagePath: 'assets/images/grpc.png',
                                   imageURL: 'https://grpc.io/',
                               ),
-                              ProgrammingIconSvg(
-                                imagePath: 'images/go.svg',
+                              ProgrammingIconImage(
+                                imagePath: 'assets/images/go.png',
                                 imageURL: 'https://go.dev/',
                               ),
                             ],
@@ -135,7 +134,7 @@ class ProjectPage extends StatelessWidget {
                         ),
                       ),
                       const ProjectURL(
-                        projectImage: 'images/lgmg_logo.png',
+                        projectImage: 'assets/images/lgmg_logo.png',
                         projectURL: 'https://play.google.com/store/apps/details?id=com.gmail.lgmgapp',
                         projectImageWidth: 175,
                       ),
@@ -146,20 +145,20 @@ class ProjectPage extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: const [
-                              ProgrammingIconSvg(
-                                imagePath: 'images/flutter.svg',
+                              ProgrammingIconImage(
+                                imagePath: 'assets/images/flutter.png',
                                 imageURL: 'https://flutter.dev',
                               ),
-                              ProgrammingIconSvg(
-                                imagePath: 'images/python.svg',
+                              ProgrammingIconImage(
+                                imagePath: 'assets/images/python.png',
                                 imageURL: 'https://www.python.org/',
                               ),
-                              ProgrammingIconSvg(
-                                imagePath: 'images/grpc.svg',
+                              ProgrammingIconImage(
+                                imagePath: 'assets/images/grpc.png',
                                 imageURL: 'https://grpc.io/',
                               ),
-                              ProgrammingIconSvg(
-                                imagePath: 'images/go.svg',
+                              ProgrammingIconImage(
+                                imagePath: 'assets/images/go.png',
                                 imageURL: 'https://go.dev/',
                               ),
                             ],
