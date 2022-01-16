@@ -10,13 +10,15 @@ class SeparateAboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final maxWidth = MediaQuery.of(context).size.width;
-
+    final maxHeight = MediaQuery.of(context).size.height;
     if(maxWidth > 1000) {
       return Scaffold(
         appBar: CustomNavBar(),
         drawer: maxWidth > 700 ? null : const MobileDrawer(),
         body: Container(
           color: Theme.of(context).backgroundColor,
+          width: maxWidth,
+          height: maxHeight,
           child: Padding(
               padding: const EdgeInsets.only(
                 top: 60,
@@ -36,18 +38,13 @@ class SeparateAboutPage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Container(
-                          color: Colors.white,
-                          height: 400,
-                          width: 300
-                      ),
                       Column(
                         children: [
                           SizedBox(
                             width: 400,
                             child: Text(
-                              'I am a self-taught front-end developer based out of Harrisburg, PA with a passive for creating applications and websites.'
-                                  ' I have a passion for learning and I am always looking to improve my skills. \n\n'
+                              'I am a self-taught front-end developer based out of Harrisburg, PA with a passion for creating applications and websites.'
+                                  ' I strive to learn and I am always looking to improve my skills.\n\n'
                                   'Currently specializing in Flutter and Dart,'
                                   ' I build applications for 6 separates platforms at the same time in the same code base. '
                                   'If Dart/Flutter doesn\'t meet the requirements, I have the ability to switch to other technologies, '
@@ -107,8 +104,8 @@ class SeparateAboutPage extends StatelessWidget {
                     SizedBox(
                       width: 400,
                       child: Text(
-                        'I am a self-taught front-end developer based out of Harrisburg, PA with a passive for creating applications and websites.'
-                            ' I have a passion for learning and I am always looking to improve my skills. \n\n'
+                        'I am a self-taught front-end developer based out of Harrisburg, PA with a passion for creating applications and websites.'
+                            ' I strive to learn and I am always looking to improve my skills. \n\n'
                             'Currently specializing in Flutter and Dart,'
                             ' I build applications for 6 separates platforms at the same time in the same code base. '
                             'If Dart/Flutter doesn\'t meet the requirements, I have the ability to switch to other technologies, '

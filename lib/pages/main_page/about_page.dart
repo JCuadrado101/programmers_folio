@@ -28,11 +28,6 @@ class AboutPage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 30),
-                  Container(
-                      color: Colors.white,
-                      height: 400,
-                      width: 300
-                  ),
                 ],
               ),
               Column(
@@ -75,19 +70,14 @@ class AboutPage extends StatelessWidget {
                     color: Colors.white
                 ),
               ),
-              SizedBox(height: 20),
-              Container(
-                  color: Colors.white,
-                  height: 400,
-                  width: 300
-              ),
+              const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.only(top: 20),
                 child: SizedBox(
                   width: 400,
                   child: Text(
-                    'I am a self-taught front-end developer based out of Harrisburg, PA with a passive for creating applications and websites.'
-                        ' I have a passion for learning and I am always looking to improve my skills. \n\n'
+                    'I am a self-taught front-end developer based out of Harrisburg, PA with a passion for creating applications and websites.'
+                        ' I strive to learn and I am always looking to improve my skills. \n\n'
                         'Currently specializing in Flutter and Dart,'
                         ' I build applications for 6 separates platforms at the same time in the same code base. '
                         'If Dart/Flutter doesn\'t meet the requirements, I have the ability to switch to other technologies, '

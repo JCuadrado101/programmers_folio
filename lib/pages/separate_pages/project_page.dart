@@ -12,6 +12,7 @@ class SeparateProjectPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final maxWidth = MediaQuery.of(context).size.width;
+    final maxHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: CustomNavBar(),
       drawer: maxWidth > 700 ? null : const MobileDrawer(),
@@ -19,6 +20,7 @@ class SeparateProjectPage extends StatelessWidget {
         child: Container(
           color: Theme.of(context).backgroundColor,
           width: maxWidth,
+          height: maxHeight,
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 80),
             child: Column(

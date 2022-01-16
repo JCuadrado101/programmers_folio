@@ -12,13 +12,14 @@ class SeparateServicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final maxWidth = MediaQuery.of(context).size.width;
-
+    final maxHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: CustomNavBar(),
       drawer: maxWidth > 700 ? null : const MobileDrawer(),
       body: Container(
         color: Theme.of(context).backgroundColor,
         width: maxWidth,
+        height: maxHeight,
         child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.only(
